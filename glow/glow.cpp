@@ -209,8 +209,8 @@
     	}
      
     	static void update_glow() {
-    		DWORD gpStart = mem->FindPatternArray(modClient.dwBase, modClient.dwSize, "x????xxxxxxxx", 13, 0xB8, 0x0, 0x0, 0x0, 0x0, 0xC3, 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0x55);
-    		dwGlow = mem->Read<DWORD>(gpStart + 1) - modClient.dwBase;
+    		DWORD gpStart = mem->FindPatternArray(modClient.dwBase, modClient.dwSize, "xxx????xxxxx????????", 20, 0x0F, 0x11, 0x05, 0x0, 0x0, 0x0, 0x0, 0x83, 0xC8, 0x01, 0xC7, 0x05, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0);
+    		dwGlow = mem->Read<DWORD>(gpStart + 3) - modClient.dwBase;
     	}
     public:
     	static void get_offset(process* m) {
