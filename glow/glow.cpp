@@ -16,8 +16,8 @@
     DWORD dwEntityList;  //will be scanned
     DWORD dwGlow;        //will be scanned
      
-    DWORD dwTeam = 0xF0;
-    DWORD dwDormant = 0xE9;
+    DWORD dwTeam = 0xF4;
+    DWORD dwDormant = 0xED;
      
     struct PModule
     {
